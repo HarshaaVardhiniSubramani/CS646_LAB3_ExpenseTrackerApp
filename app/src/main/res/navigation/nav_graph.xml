@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.zybooks.expensetracker.DashboardFragment"
+        android:label="@string/my_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_expense_logs"
+        android:name="com.zybooks.expensetracker.ExpenseLogsFragment"
+        android:label="@string/expense_logs"
+        tools:layout="@layout/fragment_expense_logs" />
+
+    <fragment
+        android:id="@+id/navigation_help"
+        android:name="com.zybooks.expensetracker.HelpFragment"
+        android:label="@string/help_center"
+        tools:layout="@layout/fragment_help" />
+</navigation>
